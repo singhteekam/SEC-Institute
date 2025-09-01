@@ -23,7 +23,13 @@ const courseOptions = {
      "HTML",
      "JavaScript",
      "CSS",
-     "Java"
+     "Java",
+     "Web Designing",
+     "Python",
+     "C/C++",
+     "Shorthand",
+     "Microsoft Office",
+     "Artificial Intelligence (AI)"
     ],
 };
 

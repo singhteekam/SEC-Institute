@@ -47,7 +47,7 @@ function App() {
           <Route path="/admin/dashboard" element={<AdminDashboard />} exact />
           <Route path="/admin/profile" element={<AdminProfile />} exact />
           <Route path="/contact" element={<ContactUs/>}/>
-          {/* <Route path="/certificate" element={<CertificatePage/>}/> */}
+          <Route path="/certificate" element={<CertificatePage/>}/>
           {/* <Route path="/studentverify" element={<StudentVerification />} /> */}
         </Routes>
       </main>
