@@ -1,0 +1,32 @@
+html {
+    --color-misty-blue: #b0b7c0;  
+    --color-black: #171710; 
+    --color-gray:#707370; 
+    --color-gunmetal-gray: #595e60; 
+  }
+
+  .color-misty-blue{
+    color: var(--color-misty-blue) !important;
+  }
+  .color-black{
+    color: var(--color-black) !important;
+  }
+  .color-gray{
+    color: var(--color-gray) !important;
+  }
+  .color-gunmetal-gray{
+    color: var(--color-gunmetal-gray) !important;
+  }
+
+  .bgcolor-misty-blue{
+    background-color: var(--color-misty-blue) !important;
+  }
+  .bgcolor-black{
+    background-color: var(--color-black) !important;
+  }
+  .bgcolor-gray{
+    background-color: var(--color-gray) !important;
+  }
+  .bgcolor-gunmetal-gray{
+    background-color: var(--color-gunmetal-gray) !important;
+  }
