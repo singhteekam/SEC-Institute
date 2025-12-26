@@ -9,8 +9,8 @@ const student = require("./routes/student");
 // require("dotenv").config({ path: ".env.local" });
 require("dotenv").config({ path: ".env" });  // For production
 
-// const PORT = process.env.PORT || 5000; // For development
-const PORT = 8185;  // For production
+const PORT = process.env.PORT || 5000; // For development
+// const PORT = 8185;  // For production
 
 const { onRequest } = require("firebase-functions/v2/https");
 

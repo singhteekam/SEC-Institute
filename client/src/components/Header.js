@@ -26,7 +26,8 @@ import logo from "../assets/logo.png";
 const navItems = [
   { label: "HOME", path: "/" },
   { label: "ABOUT US", path: "#aboutsec" },
-  { label: "Contact Us", path: "/contact" },
+  { label: "Study Material", path: "/external/blogs" },
+  // { label: "Contact Us", path: "/contact" },
   { label: "STUDENT VERIFICATION", path: "/studentverify" },
   { label: "COURSES", path: "/courses" },
   { label: "ONLINE LEARNING", path: "/online-learning" },
@@ -45,8 +46,8 @@ export default function Header() {
 
   const token = localStorage.getItem("token");
 
-  console.log("Token:", token);
-  console.log("User Details:", localStorage.getItem("user"));
+  // console.log("Token:", token);
+  // console.log("User Details:", localStorage.getItem("user"));
 
   const navigate = useNavigate();
 
@@ -62,7 +63,7 @@ export default function Header() {
 
   useEffect(() => {
     const user = localStorage.getItem("user");
-    console.log("User:", user);
+    // console.log("User:", user);
     setIsLoggedIn(!!user);
     if (user) {
       setUserDetails(user);

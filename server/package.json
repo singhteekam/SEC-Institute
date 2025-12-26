@@ -7,23 +7,23 @@
     "start": "node app.js",
     "deploy": "firebase deploy --only functions:secinstitutebackend"
   },
-    "engines": {
+  "engines": {
     "node": "22"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.10.0",
+    "axios": "^1.13.2",
     "bcrypt": "^6.0.0",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "dotenv": "^17.0.0",
     "express": "^5.1.0",
     "express-multipart-file-parser": "^0.1.2",
+    "firebase-admin": "^12.1.1",
+    "firebase-functions": "^5.0.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.16.1",
-    "nodemailer": "^7.0.4",
-    "firebase-admin": "^12.1.1",
-    "firebase-functions": "^5.0.1"
+    "nodemailer": "^7.0.4"
   }
 }

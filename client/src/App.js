@@ -23,6 +23,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions";
 import ContactUs from "./components/ContactUs";
 import CertificatePage from "./components/Student/Certificates/CertificatePage";
+import Blogs from "./components/Resources/Blogs";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           {/* <Route path="/signup" element={<Signup />} /> */}
           <Route path="/studentverify" element={<StudentVerification />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/external/blogs" element={<Blogs />} />
           <Route path="/branches" element={<Branches />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />

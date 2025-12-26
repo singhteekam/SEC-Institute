@@ -1,5 +1,7 @@
 const Student = require("../models/Student");
 const sendEmail = require("../services/mailer");
+const axios= require("axios")
+const fs= require("fs")
 
 exports.getProfileInfo= async (req, res) => {
   try {
@@ -48,3 +50,39 @@ exports.contactUs = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 }
+
+
+exports.externalBlogs= async (req, res) => {
+  try {
+    const response = await axios.get(
+      "BACKEND_API_URL_OF_ALL_BLOGS"
+    );
+
+    const data= response.data.map((blog)=>({
+      slug: blog.slug,
+      title: blog.title
+    }))
+    // console.log(data);
+    fs.writeFileSync("blogs.json", JSON.stringify(data, null, 2));
+
+    // console.log(response)
+
+    // const data= response.data.reduce((acc, blog)=>{
+    //   acc.push({slug: blog.slug, title: blog.title});
+    //   return acc;
+    // }, [])
+    // console.log(data)
+
+    // const response = await axios.get(
+    //   "URL",
+    //   { responseType: "text" }
+    // );
+
+    // console.log(response.data)
+
+    // res.set("Content-Type", "text/xml");
+    // res.send(response.data);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch sitemap" });
+  }
+};
